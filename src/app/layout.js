@@ -1,12 +1,10 @@
-// app/layout.jsx
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-// Konfigurasi font Inter
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter", // CSS variable name
-  weight: "400", // Regular weight (default)
+  variable: "--font-inter",
+  weight: "400",
 });
 
 export const metadata = {
