@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="text-white pt-16 px-4">
+        <footer className="bg-black text-white pt-16 px-4">
             <div className="max-w-6xl mx-auto border border-gray-700 rounded-t-3xl p-4 md:p-10">
                 <div className="grid md:grid-cols-3 gap-10 items-start">
                     <div className="space-y-6 text-center md:text-left">
@@ -38,7 +38,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-base">
-                    Copyright © 2025 Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+                    Copyright © 2025 Marktwoosh
                 </div>
             </div>
         </footer>

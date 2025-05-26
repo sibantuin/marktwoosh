@@ -1,7 +1,7 @@
 export default function Number() {
     return (
-        <div className="relative overflow-hidden">
-            <div className="relative z-10 py-10 flex flex-col items-center justify-center text-center">
+        <div className="bg-black relative overflow-hidden">
+            <div className="relative z-10 pb-10 flex flex-col items-center justify-center text-center">
                 <h1 className="mb-[48px] text-3xl font-semibold md:text-4xl lg:text-5xl">
                     MarktWoosh in Numbers
                 </h1>

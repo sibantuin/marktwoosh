@@ -1,7 +1,7 @@
 export default function OurService() {
     return (
-        <div className="relative overflow-hidden">
-            <div className="relative z-10 flex flex-col items-center justify-center text-center">
+        <div className="bg-black relative overflow-hidden">
+            <div className="relative z-10 flex flex-col items-center justify-center text-center py-10 mt-10">
                 <span className="font-semibold text-[#7BDB16]">
                     Our Services
                 </span>
