@@ -1,5 +1,14 @@
+'use client';
+
+import Navbar from "../components/Navbar";
+
 export default function Pricing() {
     return (
-        <div></div>
+        <>
+            <Navbar />
+            <div>
+
+            </div>
+        </>
     )
 }
