@@ -9,7 +9,7 @@ export default function WhyUs() {
                         <p className="text-[#7BDB16] font-semibold tracking-wide">Why Us?</p>
 
                         <div>
-                            <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight">
+                            <h1 className="text-white text-4xl md:text-5xl font-semibold leading-tight">
                                 Why Hire Me For Your <br />
                                 Next <span className="text-[#7BDB16]">Project?</span>
                             </h1>
@@ -25,20 +25,20 @@ export default function WhyUs() {
 
 
                     <div className="relative z-10 flex flex-col items-center justify-center text-left">
-                        <div className="space-y-4 text-center">
-                            <p className="p-4 rounded-[21px] outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                        <div className="space-y-6 text-center p-4">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
                                 Affordable and Accessible <br />Professional Solutions
                             </p>
-                            <p className="p-4 rounded-[21px] outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
                                 Eliminates Technical Barriers
                             </p>
-                            <p className="p-4 rounded-[21px] outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
                                 Faster Time to Market
                             </p>
-                            <p className="p-4 rounded-[21px] outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
                                 Scalable and Results-Driven
                             </p>
-                            <p className="p-4 rounded-[21px] outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
                                 Fully Managed Solution
                             </p>
                         </div>

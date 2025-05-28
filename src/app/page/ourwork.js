@@ -4,17 +4,17 @@ export default function OurWork() {
     const projects = [
         {
             title: "Creative Portfolio Website",
-            description: "A modern, responsive portfolio built for a freelance designer.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
             image: "/brand_roblox.svg",
         },
         {
             title: "E-commerce Platform",
-            description: "Scalable web app with integrated payment and admin dashboard.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
             image: "/brand_roblox.svg",
         },
         {
             title: "Marketing Landing Page",
-            description: "High-conversion landing page for a product launch.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
             image: "/brand_roblox.svg",
         },
     ];
@@ -33,13 +33,13 @@ export default function OurWork() {
                         <div className="w-full border border-[#7BDB16] rounded-2xl flex items-center justify-center h-64 bg-black">
                             <Image
                                 src={project.image}
-                                width={100}
-                                height={100}
+                                width={1000}
+                                height={1000}
                                 alt={project.title}
-                                className="h-24 object-contain"
+                                className="h-16 object-contain"
                             />
                         </div>
-                        <h3 className="text-white text-xl font-semibold">{project.title}</h3>
+                        <h3 className="text-white text-xl font-regular">{project.title}</h3>
                         <p className="text-gray-400 text-sm">{project.description}</p>
                         <a href="#" className="text-[#7BDB16] font-medium text-sm">
                             Read more

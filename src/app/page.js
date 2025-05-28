@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <LandingPage />
       <OurClient />
-      <OurService />
+      {/* <OurService /> */}
       <CalltoAction />
       <WhyUs />
       <Number />
