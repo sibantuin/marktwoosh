@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Testimonials() {
     const testimonials = [
         {
@@ -40,8 +42,10 @@ export default function Testimonials() {
                         className="bg-[#FFF]/15 p-8 rounded-xl border border-[#FFF]/30 hover:border-[#7BDB16]/50 transition-all duration-300 group relative pb-20 bg-gradient-to-t from-[#0f0f0f] to-transparent"
                     >
                         {/* Menampilkan gambar langsung dari path di data */}
-                        <img
+                        <Image
                             src={testimonial.company}
+                            width={100}
+                            height={100}
                             alt={testimonial.name + " logo"}
                             className="w-32 h-auto mb-6 object-contain"
                         />

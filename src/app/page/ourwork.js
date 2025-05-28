@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function OurWork() {
     const projects = [
         {
@@ -29,8 +31,10 @@ export default function OurWork() {
                 {projects.map((project, index) => (
                     <div key={index} className="flex flex-col items-start space-y-4">
                         <div className="w-full border border-[#7BDB16] rounded-2xl flex items-center justify-center h-64 bg-black">
-                            <img
+                            <Image
                                 src={project.image}
+                                width={100}
+                                height={100}
                                 alt={project.title}
                                 className="h-24 object-contain"
                             />

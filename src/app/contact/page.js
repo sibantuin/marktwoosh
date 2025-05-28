@@ -3,6 +3,7 @@
 import { useState } from "react";
 import HookButton from "../components/HookButton";
 import Navbar from "../components/Navbar";
+import Image from "next/image";
 
 export default function Contact() {
     const [activeTag, setActiveTag] = useState("Monthly");
@@ -27,17 +28,35 @@ export default function Contact() {
                             </p>
                             {/* Email */}
                             <div className="flex items-center space-x-2 mb-4">
-                                <img src="/ic_mail.svg" alt="Email Icon" className="w-5 h-5" />
+                                <Image
+                                    src="/ic_mail.svg"
+                                    alt="Email Icon"
+                                    className="w-5 h-5"
+                                    width={20}
+                                    height={20}
+                                />
                                 <p className="text-white">hello@marktwoosh.com</p>
                             </div>
                             {/* Phone */}
                             <div className="flex items-center space-x-2 mb-4">
-                                <img src="/ic_phone.svg" alt="Phone Icon" className="w-5 h-5" />
+                                <Image
+                                    src="/ic_phone.svg"
+                                    alt="Phone Icon"
+                                    className="w-5 h-5"
+                                    width={20}
+                                    height={20}
+                                />
                                 <p className="text-white">(123) 456 - 789</p>
                             </div>
                             {/* Location */}
                             <div className="flex items-center space-x-2 mb-4">
-                                <img src="/ic_location.svg" alt="Location Icon" className="w-5 h-5" />
+                                <Image
+                                    src="/ic_location.svg"
+                                    alt="Location Icon"
+                                    className="w-5 h-5"
+                                    width={20}
+                                    height={20}
+                                />
                                 <p className="text-white">Lorem ipsum dolor sit</p>
                             </div>
                         </div>
