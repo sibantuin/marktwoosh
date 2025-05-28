@@ -1,25 +1,57 @@
+import Image from "next/image";
+
 export default function Footer() {
     return (
         <footer className="bg-black text-white pt-16 px-4">
             <div className="max-w-6xl mx-auto border border-gray-700 rounded-t-3xl p-4 md:p-10">
                 <div className="grid md:grid-cols-3 gap-10 items-start">
                     <div className="space-y-6 text-center md:text-left">
-                        <img src="/favicon_marktwoosh.svg" alt="Marktwoosh Logo" className="w-25 h-25 mx-auto md:mx-0" />
+                        <Image
+                            src="/favicon_marktwoosh.svg"
+                            alt="Marktwoosh Logo"
+                            width={100}
+                            height={100}
+                            className="w-25 h-25 mx-auto md:mx-0"
+                        />
                         <p className="text-gray-300 text-sm">
                             Lorem ipsum dolor sit amet consectetur <br />adipiscing elit nulla adipiscing tincidunt<br /> interdum tellus du.
                         </p>
                         <div className="flex justify-center md:justify-start gap-8 text-white text-xl py-4">
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/ic_fb.svg" alt="Facebook" className="w-6 h-6" />
+                                <Image
+                                    src="/ic_fb.svg"
+                                    alt="Facebook"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/ic_ig.svg" alt="Instagram" className="w-6 h-6" />
+                                <Image
+                                    src="/ic_ig.svg"
+                                    alt="Instagram"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/ic_x.svg" alt="Twitter / X" className="w-6 h-6" />
+                                <Image
+                                    src="/ic_x.svg"
+                                    alt="Twitter / X"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <img src="/ic_linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
+                                <Image
+                                    src="/ic_linkedin.svg"
+                                    alt="LinkedIn"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </a>
                         </div>
                     </div>
