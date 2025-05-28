@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
     return (
-        <div className="bg-black flex items-center justify-between px-16 py-4 shadow-md">
+        <div className="bg-black flex font-reguler items-center justify-between px-16 py-4 shadow-md">
             <Link href="/">
                 <Image
                     src="/ic_marktwoosh.svg"
