@@ -71,7 +71,7 @@ export default function AboutUs() {
                             </div>
                         ))}
                     </div>
-                    <p className="text-[#ccc] max-w-3xl px-4">
+                    <p className="text-[#6F6F6F] max-w-3xl px-4">
                         {steps[currentStep].content}
                     </p>
                 </div>

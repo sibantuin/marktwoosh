@@ -15,7 +15,7 @@ export default function WhyUs() {
                             </h1>
                         </div>
 
-                        <p className="text-[#cfcfcf] text-base leading-relaxed">
+                        <p className="text-[#FFF]/50 text-base leading-relaxed">
                             Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum
                             tempus hac tellus libero accumsan.
                         </p>
