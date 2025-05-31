@@ -3,37 +3,38 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
 
 const portfolioItems = [
     {
+        slug: "kindlyn",
         title: "How We Helped Kindlyn Turn Complex Payment Tech into a Seamless Digital Experience",
-        image: "/content_kindlyn.svg",
-        link: "#"
+        image: "/content_kindlyn.svg"
     },
     {
+        slug: "jmw",
         title: "How We Brought JMW’s High-Tech Hair Tools to Life with a Brand New Website Targeted for the European Market",
-        image: "/content_jmw.svg",
-        link: "#"
+        image: "/content_jmw.svg"
     },
     {
+        slug: "semioticom",
         title: "How We Translated Semioticom’s Expertise into a Modern, Multilingual Website for a Global Audience",
-        image: "/content_semioticon.svg",
-        link: "#"
+        image: "/content_semioticon.svg"
     },
     {
+        slug: "hurom",
         title: "How We Boosted Hurom Europe’s Sales by 36% and achieve Average ROAS of 18x with Targeted Google and Meta Advertising in Less Than a Year.",
-        image: "/content_hurom.svg",
-        link: "#"
+        image: "/content_hurom.svg"
     },
     {
+        slug: "nanotag",
         title: "How We Revamped Nano-Tag's Web Design and Google Ads Strategy to Achieve a 2x Increase in Conversion Rate and Optimized Ad Spend.",
-        image: "/content_nanotag.svg",
-        link: "#"
+        image: "/content_nanotag.svg"
     },
     {
+        slug: "mondona",
         title: "How we re-designed and re-developed Mondona’s brand new e-shop targeted for the European market.",
-        image: "/content_mondona.svg",
-        link: "#"
+        image: "/content_mondona.svg"
     },
 ];
 
@@ -61,9 +62,9 @@ export default function Portfolio() {
                                 <h3 className="text-white text-2xl md:text-3xl font-semibold mb-4">
                                     {item.title}
                                 </h3>
-                                <a href={item.link} className="text-gray-400 hover:text-[#7BDB16] flex items-center gap-1 transition">
+                                <Link href={`/portfolio/${item.slug}`} className="text-gray-400 hover:text-[#7BDB16] flex items-center gap-1 transition">
                                     Read more <span>&gt;</span>
-                                </a>
+                                </Link>
                             </div>
 
                             {/* Right Image */}
@@ -84,3 +85,5 @@ export default function Portfolio() {
         </div>
     );
 }
+
+export { portfolioItems };

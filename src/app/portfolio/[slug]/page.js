@@ -1,65 +1,87 @@
-'use client';
-
-import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
-import { portfolioData } from '../page';
+import Navbar from '@/app/components/Navbar';
+import { portfolioDetails } from '@/app/data/constant';
+import OurWork from '@/app/page/ourwork';
 
 export default function PortfolioDetail({ params }) {
-    const { slug } = params;
+    const data = portfolioDetails.find(item => item.slug === params.slug);
 
-    const project = portfolioData.find(p => p.slug === slug);
-
-    if (!project) {
-        return (
-            <div className="bg-black min-h-screen text-white p-10">
-                <Navbar />
-                <h1 className="text-2xl font-bold text-red-500">Project not found</h1>
-                <Footer />
-            </div>
-        );
-    }
+    if (!data) return <div className="text-white p-10">Project not found</div>;
 
     return (
         <div className="bg-black text-white min-h-screen">
             <Navbar />
-
-            {/* Header */}
-            <section className="max-w-5xl mx-auto text-center py-12 px-4">
-                <h1 className="text-3xl md:text-4xl font-bold mb-4">{project.title}</h1>
-                <h2 className="text-[#7BDB16] text-xl mb-6">{project.client}</h2>
-                <img
-                    src={project.coverImage}
-                    alt={project.client}
-                    className="mx-auto mb-8 rounded-md border border-[#7BDB16]"
+            <div className="max-w-4xl mx-auto px-4 py-12">
+                <h1
+                    className="text-center text-[55px] font-bold mb-6"
+                    dangerouslySetInnerHTML={{ __html: data.title }}
                 />
-            </section>
 
-            {/* Content */}
-            <section className="max-w-4xl mx-auto px-6">
-                {project.overview.map((para, idx) => (
-                    <p key={idx} className="mb-4 text-gray-300 leading-relaxed">{para}</p>
+                {data.logo && (
+                    <div className="flex justify-center mb-8">
+                        <img src={data.logo} alt={`${data.client} logo`} className="h-150" />
+                    </div>
+                )}
+
+                <p className="text-justify text-[35px] mx-auto font-semibold text-white mb-12">{data.description}</p>
+
+                {data.sections.map((section, index) => (
+                    <div key={index} className="mb-12">
+                        <h2 className="text-[#83E617] text-[80px] font-bold mb-4">{section.heading}</h2>
+
+                        {section.content && (
+                            Array.isArray(section.content)
+                                ? section.content.map((p, idx) => (
+                                    <p key={idx} className="text-white text-[35px] text-justify font-regular mb-8">{p}</p>
+                                ))
+                                : section.content.split('\n\n').map((paragraph, idx) => (
+                                    <p key={idx} className="text-white text-[35px] text-justify font-regular mb-4">{paragraph}</p>
+                                ))
+                        )}
+
+                        {section.bullets && (
+                            <ul className="list-disc list-inside text-[35px] text-white text-justify mb-24">
+                                {section.bullets.map((bullet, i) => (
+                                    <li className="mb-4" key={i} dangerouslySetInnerHTML={{ __html: bullet }} />
+                                ))}
+                            </ul>
+                        )}
+
+                        {section.subsections && (
+                            <div className="space-y-4">
+                                {section.subsections.map((sub, i) => (
+                                    <div key={i}>
+                                        <p className="text-[#83E617] text-[50px] font-bold mb-4">{sub.title}</p>
+                                        {Array.isArray(sub.content)
+                                            ? sub.content.map((p, j) => (
+                                                <p key={j} className="text-white text-[35px] text-justify font-regular mb-4">{p}</p>
+                                            ))
+                                            : <p className="text-white text-[35px] text-justify font-regular mb-8">{sub.content}</p>
+                                        }
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {section.image && (
+                            <div className="flex justify-center">
+                                <img src={section.image} alt={section.heading} className="rounded-xl w-200 my-12" />
+                            </div>
+                        )}
+                    </div>
                 ))}
-            </section>
+            </div>
+            <OurWork />
 
-            {/* Slider Images */}
-            <section className="my-12 max-w-5xl mx-auto px-6">
-                <div className="flex gap-4 overflow-x-auto scrollbar-hide">
-                    {project.sliderImages.map((img, idx) => (
-                        <img
-                            key={idx}
-                            src={img}
-                            alt={`Slide ${idx + 1}`}
-                            className="w-[300px] h-auto rounded-xl border border-[#333]"
-                        />
-                    ))}
-                </div>
-            </section>
-
-            {/* Our Work Section (Placeholder or include component) */}
-            <section className="py-16 px-6 text-center text-[#7BDB16]">
-                <h2 className="text-xl mb-4">Our Work</h2>
-                {/* You can import and reuse your existing section here */}
-            </section>
+            {/* Button */}
+            <div className='flex justify-center gap-4 mb-12'>
+                <button className="bg-[#83E617] text-black font-semibold px-12 py-3 rounded-full">
+                    <a href="/contact">Let's Talk</a>
+                </button>
+                <button className="text-white px-6 py-3 rounded-full border-[#83E617] border-1">
+                    <a href="/portfolio">View case studies</a>
+                </button>
+            </div>
 
             <Footer />
         </div>
