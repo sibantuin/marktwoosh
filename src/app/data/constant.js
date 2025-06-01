@@ -92,7 +92,7 @@ const ourClient = [
 
 ]
 
-export const aboutUsSteps = [
+const aboutUsSteps = [
     {
         title: "Step 1",
         content:
@@ -110,7 +110,7 @@ export const aboutUsSteps = [
     },
 ];
 
-export const teamMembers = [
+const teamMembers = [
     {
         name: "Alexander Khadzhibekov",
         role: "SOCIAL MEDIA EXPERT",
@@ -128,7 +128,7 @@ export const teamMembers = [
     }
 ];
 
-export const pricingPlans = {
+const pricingPlans = {
     monthly: [
         {
             title: "Monthly Plans",
@@ -245,7 +245,7 @@ export const pricingPlans = {
     ]
 }
 
-export const testimonials = [
+const testimonials = [
     {
         company: "/brand/brand_mondona.svg",
         quote: "\"An amazing service\"",
@@ -269,7 +269,7 @@ export const testimonials = [
     }
 ];
 
-export const portfolioDetails = [
+const portfolioDetails = [
     {
         slug: "kindlyn",
         title: "How We Helped Kindlyn Turn Complex Payment Tech into a Seamless Digital Experience",
