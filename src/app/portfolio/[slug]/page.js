@@ -3,6 +3,7 @@ import Navbar from '@/app/components/Navbar';
 import { portfolioDetails } from '@/app/data/constant';
 import OurWork from '@/app/page/ourwork';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PortfolioDetail({ params }) {
     const data = portfolioDetails.find(item => item.slug === params.slug);
@@ -78,10 +79,10 @@ export default function PortfolioDetail({ params }) {
             <OurWork />
             <div className='flex justify-center gap-4 mb-12'>
                 <button className="bg-[#83E617] text-black font-semibold px-12 py-3 rounded-full">
-                    <a href="/contact">Let's Talk</a>
+                    <Link href="/contact">Let's Talk</Link>
                 </button>
                 <button className="text-white px-6 py-3 rounded-full border-[#83E617] border-1">
-                    <a href="/portfolio">View case studies</a>
+                    <Link href="/portfolio">View case studies</Link>
                 </button>
             </div>
             <Footer />
