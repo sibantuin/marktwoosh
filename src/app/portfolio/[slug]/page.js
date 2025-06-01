@@ -79,7 +79,7 @@ export default function PortfolioDetail({ params }) {
             <OurWork />
             <div className='flex justify-center gap-4 mb-12'>
                 <button className="bg-[#83E617] text-black font-semibold px-12 py-3 rounded-full">
-                    <Link href="/contact">Let's Talk</Link>
+                    <Link href="/contact">Let&apos;s Talk</Link>
                 </button>
                 <button className="text-white px-6 py-3 rounded-full border-[#83E617] border-1">
                     <Link href="/portfolio">View case studies</Link>
