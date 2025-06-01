@@ -2,6 +2,7 @@ import Footer from '@/app/components/Footer';
 import Navbar from '@/app/components/Navbar';
 import { portfolioDetails } from '@/app/data/constant';
 import OurWork from '@/app/page/ourwork';
+import Image from 'next/image';
 
 export default function PortfolioDetail({ params }) {
     const data = portfolioDetails.find(item => item.slug === params.slug);
@@ -16,7 +17,12 @@ export default function PortfolioDetail({ params }) {
                 />
                 {data.logo && (
                     <div className="flex justify-center mb-8">
-                        <img src={data.logo} alt={`${data.client} logo`} className="h-150" />
+                        <Image
+                            src={data.logo}
+                            alt={`${data.client} logo`}
+                            width={900}
+                            height={250}
+                        />
                     </div>
                 )}
                 <p className="text-justify text-[35px] mx-auto font-semibold text-white mb-12">{data.description}</p>
@@ -57,7 +63,13 @@ export default function PortfolioDetail({ params }) {
                         )}
                         {section.image && (
                             <div className="flex justify-center">
-                                <img src={section.image} alt={section.heading} className="rounded-xl w-200 my-12" />
+                                <Image
+                                    src={section.image}
+                                    alt={section.heading}
+                                    width={800}
+                                    height={400}
+                                    className="rounded-xl w-200 my-12"
+                                />
                             </div>
                         )}
                     </div>
