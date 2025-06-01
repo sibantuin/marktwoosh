@@ -14,7 +14,7 @@ export default function Navbar() {
                     height={50}
                 />
             </Link>
-            <div className="flex gap-8 text-gray-600">
+            <div className="flex gap-8 text-gray-600 ml-16">
                 <Link href="/" className="text-white transition-all hover:text-white hover:text-shadow-[0_0_24px_rgba(255,255,255,0.8)]">Home</Link>
                 <Link href="/aboutus" className="text-white transition-all hover:text-white hover:text-shadow-[0_0_24px_rgba(255,255,255,0.8)]">About us</Link>
                 <Link href="/pricing" className="text-white transition-all hover:text-white hover:text-shadow-[0_0_24px_rgba(255,255,255,0.8)]">Pricing</Link>

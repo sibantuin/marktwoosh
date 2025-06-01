@@ -5,9 +5,7 @@ import OurWork from '@/app/page/ourwork';
 
 export default function PortfolioDetail({ params }) {
     const data = portfolioDetails.find(item => item.slug === params.slug);
-
     if (!data) return <div className="text-white p-10">Project not found</div>;
-
     return (
         <div className="bg-black text-white min-h-screen">
             <Navbar />
@@ -16,15 +14,12 @@ export default function PortfolioDetail({ params }) {
                     className="text-center text-[55px] font-bold mb-6"
                     dangerouslySetInnerHTML={{ __html: data.title }}
                 />
-
                 {data.logo && (
                     <div className="flex justify-center mb-8">
                         <img src={data.logo} alt={`${data.client} logo`} className="h-150" />
                     </div>
                 )}
-
                 <p className="text-justify text-[35px] mx-auto font-semibold text-white mb-12">{data.description}</p>
-
                 {data.sections.map((section, index) => (
                     <div key={index} className="mb-12">
                         <h2 className="text-[#83E617] text-[80px] font-bold mb-4">{section.heading}</h2>
@@ -38,7 +33,6 @@ export default function PortfolioDetail({ params }) {
                                     <p key={idx} className="text-white text-[35px] text-justify font-regular mb-4">{paragraph}</p>
                                 ))
                         )}
-
                         {section.bullets && (
                             <ul className="list-disc list-inside text-[35px] text-white text-justify mb-24">
                                 {section.bullets.map((bullet, i) => (
@@ -46,7 +40,6 @@ export default function PortfolioDetail({ params }) {
                                 ))}
                             </ul>
                         )}
-
                         {section.subsections && (
                             <div className="space-y-4">
                                 {section.subsections.map((sub, i) => (
@@ -62,7 +55,6 @@ export default function PortfolioDetail({ params }) {
                                 ))}
                             </div>
                         )}
-
                         {section.image && (
                             <div className="flex justify-center">
                                 <img src={section.image} alt={section.heading} className="rounded-xl w-200 my-12" />
@@ -72,8 +64,6 @@ export default function PortfolioDetail({ params }) {
                 ))}
             </div>
             <OurWork />
-
-            {/* Button */}
             <div className='flex justify-center gap-4 mb-12'>
                 <button className="bg-[#83E617] text-black font-semibold px-12 py-3 rounded-full">
                     <a href="/contact">Let's Talk</a>
@@ -82,7 +72,6 @@ export default function PortfolioDetail({ params }) {
                     <a href="/portfolio">View case studies</a>
                 </button>
             </div>
-
             <Footer />
         </div>
     );

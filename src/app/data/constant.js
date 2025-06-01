@@ -92,6 +92,183 @@ const ourClient = [
 
 ]
 
+export const aboutUsSteps = [
+    {
+        title: "Step 1",
+        content:
+            "We handle everything from branding and websites to content and paid ads — backed by AI, executed by real people, and managed like we’re part of your team. No corporate fluff. No ghosting. Just high-quality support that scales with you. We built the service we wished existed when we were in your shoes. Now, it’s yours. Let’s Woosh!",
+    },
+    {
+        title: "Step 2",
+        content:
+            "After working in digital marketing since 2016, I experienced the same pain points again and again — watching small and medium-sized businesses with real potential struggle to access the kind of marketing support they deserved. And it wasn’t just me. A group of us — designers, performance marketers, content strategists — all from different corners of the marketing world",
+    },
+    {
+        title: "Step 3",
+        content:
+            "— kept running into the same frustration: Great brands were being held back by bloated agencies, inconsistent freelancers, or DIY tools that created more confusion than growth. So, we came together to build MarktWoosh — a done-for-you marketing service that’s fast, affordable, and built to deliver real results.",
+    },
+];
+
+export const teamMembers = [
+    {
+        name: "Alexander Khadzhibekov",
+        role: "SOCIAL MEDIA EXPERT",
+        image: "/decoration/dec_imgplaceholder.svg"
+    },
+    {
+        name: "Darwin Wiranda",
+        role: "FOUNDER / CEO",
+        image: "/decoration/dec_imgplaceholder.svg"
+    },
+    {
+        name: "Unknown",
+        role: "UI / UX DESIGNER",
+        image: "/decoration/dec_imgplaceholder.svg"
+    }
+];
+
+export const pricingPlans = {
+    monthly: [
+        {
+            title: "Monthly Plans",
+            price: "$129",
+            features: [
+                "Logo and basic brand kit (colors, fonts)",
+                "1-page website (mobile-ready)",
+                "4 social media posts per month",
+                "Dedicated account manager (email only)",
+            ],
+            badge: "",
+        },
+        {
+            title: "Boost",
+            price: "$249",
+            features: [
+                "Full brand kit (logo, colors, visual guide)",
+                "Up to 3-page website",
+                "8 social media posts per month",
+                "AI Discovery SEO included",
+                "1 ad campaign* (Meta or Google)",
+                "Dedicated account manager (email + chat response within 48h)",
+            ],
+            badge: "MOST POPULAR",
+        },
+        {
+            title: "Scale",
+            price: "$499",
+            features: [
+                "Everything in Boost",
+                "Up to 5-page website or mini landing page variant",
+                "12 social media posts per month",
+                "2 ad campaigns* (Meta + Google)",
+                "Monthly performance report",
+                "Dedicated account manager (chat response within 24h)",
+            ],
+            badge: "BEST PERFORMANCE",
+        },
+        {
+            title: "Dominate",
+            price: "$799",
+            features: [
+                "Full brand kit (logo, colors, visual guide)",
+                "Up to 3-page website",
+                "8 social media posts per month",
+                "AI Discovery SEO included",
+                "1 ad campaign* (Meta or Google)",
+                "Dedicated account manager (email + chat response within 48h)",
+            ],
+            badge: "",
+        },
+    ],
+    yearly: [
+        {
+            title: "Yearly Plans",
+            price: "$799",
+            features: [
+                "Full brand kit (logo, colors, visual guide)",
+                "Up to 3-page website",
+                "8 social media posts per month",
+                "AI Discovery SEO included",
+                "1 ad campaign* (Meta or Google)",
+                "Dedicated account manager (email + chat response within 48h)",
+                "Add-ons available",
+            ],
+            cta: "Get started"
+        },
+        {
+            title: "Boost",
+            price: "$249",
+            features: [
+                "Full brand kit (logo, colors, visual guide)",
+                "Up to 3-page website",
+                "8 social media posts per month",
+                "AI Discovery SEO included",
+                "1 ad campaign* (Meta or Google)",
+                "Dedicated account manager (email + chat response within 48h)",
+                "Add-ons available",
+            ],
+            highlight: "Most Popular",
+            cta: "Get started",
+            ctaColor: "bg-orange-500"
+        },
+        {
+            title: "Scale",
+            price: "$499",
+            features: [
+                "Everything in Boost",
+                "Up to 5-page website or mini landing page variant",
+                "12 social media posts per month",
+                "2 ad campaigns* (Meta + Google)",
+                "Monthly performance report",
+                "Dedicated account manager (chat response within 24h)",
+                "Add-ons available",
+            ],
+            highlight: "Best Performance",
+            cta: "Get started",
+            ctaColor: "bg-green-500"
+        },
+        {
+            title: "Dominate",
+            price: "$799",
+            features: [
+                "Full brand kit (logo, colors, visual guide)",
+                "Up to 3-page website",
+                "8 social media posts per month",
+                "AI Discovery SEO included",
+                "1 ad campaign* (Meta or Google)",
+                "Dedicated account manager (email + chat response within 48h)",
+                "Add-ons available",
+            ],
+            cta: "Get started"
+        },
+    ]
+}
+
+export const testimonials = [
+    {
+        company: "/brand/brand_mondona.svg",
+        quote: "\"An amazing service\"",
+        text: "“Marktwoosh transformed our vision into a visually stunning, user-friendly e-commerce site with...”",
+        name: "Consuelo Nuñez",
+        role: "CMO - Mondena"
+    },
+    {
+        company: "/brand/brand_nanotag.svg",
+        quote: "\"All the way with Marktwoosh!\"",
+        text: "“Working with OGNO was a game changer, with easy communication and a creative...”",
+        name: "Hansjörg Göetzke",
+        role: "CEO - Nanotag"
+    },
+    {
+        company: "/brand/brand_dahlert.svg",
+        quote: "\"One stop shop, that's Marktwoosh\"",
+        text: "“Marktwoosh helped us revamp our brands, e-commerce websites, and EU marketing strategy. Their... ”",
+        name: "Sue Choi",
+        role: "CMO - Dahlert"
+    }
+];
+
 export const portfolioDetails = [
     {
         slug: "kindlyn",
@@ -595,5 +772,4 @@ export const portfolioDetails = [
     },
 ];
 
-
-export { ourClient, portfolioDetails };
+export { ourClient, aboutUsSteps, teamMembers, pricingPlans, testimonials, portfolioDetails };

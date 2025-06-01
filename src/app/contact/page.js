@@ -15,7 +15,6 @@ export default function Contact() {
                 <Navbar />
                 <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-10 lg:px-8">
                     <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                        {/* Left Section */}
                         <div className=" flex flex-col items-left">
                             <span className="font-semibold text-base text-[#7BDB16]">
                                 Let’s Discuss Your Needs
@@ -26,7 +25,6 @@ export default function Contact() {
                             <p className="text-white mb-12">
                                 Lorem ipsum dolor sit amet consectetur adipiscing elit <br /> nulla adipiscing tincidunt interdum tellus du.
                             </p>
-                            {/* Email */}
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
                                     src="/ic_mail.svg"
@@ -37,7 +35,6 @@ export default function Contact() {
                                 />
                                 <p className="text-white">hello@marktwoosh.com</p>
                             </div>
-                            {/* Phone */}
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
                                     src="/ic_phone.svg"
@@ -48,7 +45,6 @@ export default function Contact() {
                                 />
                                 <p className="text-white">(123) 456 - 789</p>
                             </div>
-                            {/* Location */}
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
                                     src="/ic_location.svg"
@@ -60,11 +56,8 @@ export default function Contact() {
                                 <p className="text-white">Lorem ipsum dolor sit</p>
                             </div>
                         </div>
-
-                        {/* Right Section */}
                         <div className="rounded-[33px] shadow-lg p-8 bg-[#FFF]/20 bg-gradient-to-t from-[#0f0f0f] to-transparent">
                             <form className="space-y-8">
-                                {/* Name & Email */}
                                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                                     <div>
                                         <label className="block text-sm font-medium text-white">Name</label>
@@ -83,28 +76,22 @@ export default function Contact() {
                                         />
                                     </div>
                                 </div>
-                                {/* Phone & Company */}
                                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                                     <div>
                                         <label className="block text-sm font-medium text-white">Phone</label>
                                         <input
                                             type="tel"
                                             className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-[#9795B5] font-regular bg-white shadow-sm p-3"
-                                            placeholder="(123) 456-789"
-
-                                        />
+                                            placeholder="(123) 456-789" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-white">Company</label>
                                         <input
                                             type="text"
                                             className="mt-1 pl-6 block w-full rounded-full border-gray-300 bg-white text-[#ADABC3] font-regular shadow-sm p-3"
-                                            placeholder="MarktWoosh"
-
-                                        />
+                                            placeholder="MarktWoosh" />
                                     </div>
                                 </div>
-                                {/* Message */}
                                 <div>
                                     <label className="block text-sm font-medium text-white">Message</label>
                                     <textarea
@@ -113,7 +100,6 @@ export default function Contact() {
                                         placeholder="Please type your message here..."
                                     />
                                 </div>
-                                {/* Tag Buttons */}
                                 <div className="flex justify-left space-x-4 mb-8">
                                     {tags.map((tag, i) => (
                                         <button
