@@ -27,7 +27,7 @@ export default function Contact() {
                             </p>
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
-                                    src="/ic_mail.svg"
+                                    src="/icon/ic_mail.svg"
                                     alt="Email Icon"
                                     className="w-5 h-5"
                                     width={20}
@@ -37,7 +37,7 @@ export default function Contact() {
                             </div>
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
-                                    src="/ic_phone.svg"
+                                    src="/icon/ic_phone.svg"
                                     alt="Phone Icon"
                                     className="w-5 h-5"
                                     width={20}
@@ -47,7 +47,7 @@ export default function Contact() {
                             </div>
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
-                                    src="/ic_location.svg"
+                                    src="/icon/ic_location.svg"
                                     alt="Location Icon"
                                     className="w-5 h-5"
                                     width={20}

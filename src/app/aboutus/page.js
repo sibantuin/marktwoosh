@@ -58,11 +58,11 @@ export default function AboutUs() {
                         <AnimatePresence mode="wait">
                             <motion.p
                                 key={currentStep}
-                                initial={{ opacity: 0, x: 50 }}
+                                initial={{ opacity: 0, x: 0 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -50 }}
                                 transition={{ duration: 0.5 }}
-                                className="text-[#6F6F6F]"
+                                className="text-[#FFF] text-[22px]"
                             >
                                 {aboutUsSteps[currentStep].content}
                             </motion.p>

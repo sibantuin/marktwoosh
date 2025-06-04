@@ -25,29 +25,30 @@ export default function Portfolio() {
                 </div>
                 <div className="flex flex-col gap-10 py-10">
                     {portfolioItems.map((item, index) => (
-                        <div
+                        <Link
                             key={index}
-                            className="flex flex-col md:flex-row justify-between items-center bg-black border border-[#7BDB16] rounded-2xl p-6 md:p-10 gap-6"
+                            href={`/portfolio/${item.slug}`}
+                            className="flex flex-col md:flex-row justify-between items-center bg-black border border-[#7BDB16] rounded-2xl p-6 md:p-10 gap-6 hover:shadow-[0_0_24px_rgba(123,219,22,0.2)] transition-all duration-200 cursor-pointer group"
                         >
                             <div className="flex-1">
-                                <h3 className="text-white text-2xl md:text-3xl font-semibold mb-4">
+                                <h3 className="text-white text-2xl md:text-3xl font-semibold mb-4 group-hover:text-[#7BDB16] transition-colors duration-200">
                                     {item.title}
                                 </h3>
-                                <Link href={`/portfolio/${item.slug}`} className="text-gray-400 hover:text-[#7BDB16] flex items-center gap-1 transition">
+                                <div className="text-gray-400 flex items-center gap-1 transition group-hover:text-[#7BDB16]">
                                     Read more <span className="mt-[2px]">&gt;</span>
-                                </Link>
+                                </div>
                             </div>
 
-                            <div className="flex-1 max-w-md">
+                            <div className="flex-1 max-w-md overflow-hidden rounded-xl">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
                                     width={500}
                                     height={300}
-                                    className="rounded-xl w-full h-auto object-cover"
+                                    className="rounded-xl w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

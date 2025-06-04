@@ -1,16 +1,18 @@
 import Image from "next/image";
 import HookButton from "../components/HookButton";
+import Link from "next/link";
 
 export default function LandingPage() {
     return (
         <section>
-            <div className="relative min-h-screen overflow-hidden">
-                <div className="absolute inset-0 z-0 flex items-center justify-center ">
+            <div className="relative min-h-screen overflow-hiddens mt-2 mb-36">
+                <div className="absolute inset-0 z-0 flex items-center justify-center">
                     <Image
                         src="/decoration/dec_circle.svg"
                         alt="Background Pattern"
-                        width={900}
-                        height={900}
+                        width={1125}
+                        height={1125}
+                        className="w-225s h-225"
                     />
                 </div>
                 <div className="relative z-10 flex h-screen flex-col items-center justify-center text-center">
@@ -20,7 +22,9 @@ export default function LandingPage() {
                     <p className="mb-12 max-w-2xl text-sm text-[#7C7C7C] md:text-2xl">
                         Where fast meets smart: AI-powered growth <br /> services
                     </p>
-                    <HookButton text={"Get Started"} />
+                    <Link href={`../pricing`}>
+                        <HookButton text={"Get Started"} />
+                    </Link>
                 </div>
             </div>
         </section>

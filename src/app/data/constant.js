@@ -256,7 +256,7 @@ const testimonials = [
     {
         company: "/brand/brand_nanotag.svg",
         quote: "\"All the way with Marktwoosh!\"",
-        text: "“Working with OGNO was a game changer, with easy communication and a creative...”",
+        text: "“Working with Marktwoosh was a game changer, with easy communication and a creative...”",
         name: "Hansjörg Göetzke",
         role: "CEO - Nanotag"
     },

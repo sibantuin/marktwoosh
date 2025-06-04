@@ -20,7 +20,7 @@ export default function Footer() {
                         <div className="flex justify-center md:justify-start gap-8 text-white text-xl py-4">
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <Image
-                                    src="/ic_fb.svg"
+                                    src="/icon/ic_fb.svg"
                                     alt="Facebook"
                                     width={24}
                                     height={24}
@@ -29,7 +29,7 @@ export default function Footer() {
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <Image
-                                    src="/ic_ig.svg"
+                                    src="/icon/ic_ig.svg"
                                     alt="Instagram"
                                     width={24}
                                     height={24}
@@ -38,7 +38,7 @@ export default function Footer() {
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <Image
-                                    src="/ic_x.svg"
+                                    src="/icon/ic_x.svg"
                                     alt="Twitter / X"
                                     width={24}
                                     height={24}
@@ -47,7 +47,7 @@ export default function Footer() {
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <Image
-                                    src="/ic_linkedin.svg"
+                                    src="/icon/ic_linkedin.svg"
                                     alt="LinkedIn"
                                     width={24}
                                     height={24}
@@ -60,14 +60,12 @@ export default function Footer() {
                         <h4 className="font-bold text-white">Contact Us</h4>
                         <p>123-456-7890</p>
                         <p>hello@marktwoosh.com</p>
-                        <p>Lorem ipsum dolor sit</p>
+                        <p>Lorem ipsum</p>
                     </div>
                     <div className="space-y-4 text-center ml-[100px] md:text-left">
                         <h4 className="font-bold text-white">Company</h4>
-                        <p>About Us</p>
-                        <p>Services</p>
-                        <p>Portofolio</p>
-                        <p>Testimonials</p>
+                        <p>Imprint</p>
+                        <p>Data Privacy and Policy</p>
                     </div>
                 </div>
                 <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-base">
