@@ -9,7 +9,7 @@ export default function PortfolioDetail({ params }) {
     const data = portfolioDetails.find(item => item.slug === params.slug);
     if (!data) return <div className="text-white p-10">Project not found</div>;
     return (
-        <div className="bg-black text-white min-h-screen">
+        <div className="bg-black text-white min-h-screen mt-20">
             <Navbar />
             <div className="max-w-4xl mx-auto px-4 py-12">
                 <h1

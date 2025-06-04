@@ -126,7 +126,7 @@ export default function Pricing() {
     };
 
     return (
-        <div className="bg-black min-h-screen">
+        <div className="bg-black min-h-screen mt-16">
             <Navbar />
             <div className="max-w-6xl mx-auto px-4 py-16">
                 <div className="text-center mb-12">

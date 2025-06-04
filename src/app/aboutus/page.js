@@ -10,11 +10,11 @@ import { aboutUsSteps, teamMembers } from '@/app/data/constant';
 export default function AboutUs() {
     const [currentStep, setCurrentStep] = useState(0);
     return (
-        <div className="bg-black min-h-screen">
+        <div className="bg-black min-h-screen mt-20">
             <Navbar />
             <div className="bg-black relative overflow-hidden">
                 <div className="relative z-10 flex flex-col items-center justify-center text-center py-10">
-                    <h1 className="text-4xl font-semibold text-white">
+                    <h1 className="text-4xl font-semibold text-white mb-[25px]">
                         About us
                     </h1>
                     <h1 className="text-4xl font-semibold text-[#7BDB16]">
@@ -23,7 +23,7 @@ export default function AboutUs() {
                     </h1>
                 </div>
                 <div className="relative z-10 flex flex-col items-center justify-center text-center py-10">
-                    <h1 className="text-2xl text-[#01FE84] font-semibold mb-6">
+                    <h1 className="text-2xl text-[#01FE84] font-semibold mb-[50px]">
                         Our Story
                     </h1>
                     <div className="flex items-center mb-10">

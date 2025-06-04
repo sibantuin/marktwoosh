@@ -11,7 +11,7 @@ export default function Contact() {
 
     return (
         <>
-            <div className="bg-black">
+            <div className="bg-black min-h-screen mt-20">
                 <Navbar />
                 <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-10 lg:px-8">
                     <div className="lg:grid lg:grid-cols-2 lg:gap-16">
