@@ -8,8 +8,8 @@ export default function Navbar() {
     const pathname = usePathname();
 
     const navLinkClass = (path) =>
-        `transition-all hover:text-white hover:text-shadow-[0_0_8px_white,_0_0_24px_white,_0_0_48px_white] ${pathname === path || (path === '/portfolio' && pathname.startsWith('/portfolio'))
-            ? 'text-[#FFF] text-shadow-[0_0_8px_#7BDB16,0_0_16px_#FFF]'
+        `transition-all hover:text-[#83E617] ${pathname === path || (path === '/portfolio' && pathname.startsWith('/portfolio'))
+            ? 'text-[#83E617]'
             : 'text-white'
         }`;
 

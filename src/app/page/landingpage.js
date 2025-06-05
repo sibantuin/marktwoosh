@@ -12,7 +12,7 @@ export default function LandingPage() {
                         alt="Background Pattern"
                         width={1125}
                         height={1125}
-                        className="w-225 h-225"
+                        className="max-w-full h-auto"
                     />
                 </div>
                 <div className="relative z-10 flex h-screen flex-col items-center justify-center text-center">
