@@ -1,6 +1,5 @@
 'use client';
 
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { portfolioDetails } from "../data/constant";
@@ -9,12 +8,12 @@ export default function OurWork() {
     return (
         <section className="text-white bg-black py-16 relative overflow-hidden">
             <div className="max-w-6xl mx-auto text-center mb-12">
-                <h2 className="text-[#7BDB16] font-bold text-2xl mb-2">Our Work</h2>
-                <p className="text-4xl md:text-5xl font-bold">Some of our previous work</p>
+                <h2 className="text-[#7BDB16] font-bold text-[20px]">Our Work</h2>
+                <p className="text-[55px] font-bold">Some of our previous work</p>
             </div>
 
             <div className="relative overflow-hidden">
-                <div className="flex w-max gap-8 animate-scroll">
+                <div className="flex w-max gap-8 animate-scroll-right">
                     {[...portfolioDetails, ...portfolioDetails].map((project, index) => {
                         const imageSrc = `portfolio/content_${project.slug}.svg`;
                         return (

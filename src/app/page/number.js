@@ -23,7 +23,7 @@ export default function Number() {
                             <h3 className="text-4xl font-bold text-[#7BDB16] mb-2">3x</h3>
                             <p className="font-bold text-white">Faster Delivery</p>
                         </div>
-                    </div>x
+                    </div>
                 </div>
             </div>
         </section>
