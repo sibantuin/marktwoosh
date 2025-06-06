@@ -5,9 +5,19 @@ import OurWork from '@/app/page/ourwork';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function PortfolioDetail({ params }) {
+export const dynamic = 'force-static';
+
+export async function generateStaticParams() {
+    return portfolioDetails.map((item) => ({
+        slug: item.slug,
+    }));
+}
+
+export default async function PortfolioDetail({ params }) {
     const data = portfolioDetails.find(item => item.slug === params.slug);
+
     if (!data) return <div className="text-white p-10">Project not found</div>;
+
     return (
         <div className="bg-black text-white min-h-screen mt-20">
             <Navbar />

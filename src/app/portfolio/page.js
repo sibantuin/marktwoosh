@@ -9,7 +9,7 @@ import { portfolioDetails } from "../data/constant";
 const portfolioItems = portfolioDetails.map(({ slug, title }) => ({
     slug,
     title,
-    image: `portfolio/content_${slug}.svg`
+    image: `/portfolio/content_${slug}.svg`
 }));
 
 export default function Portfolio() {

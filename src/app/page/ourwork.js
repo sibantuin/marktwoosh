@@ -7,7 +7,7 @@ import { portfolioDetails } from "../data/constant";
 
 export default function OurWork() {
     return (
-        <section className="text-white bg-black py-16 px-6 md:px-8 relative overflow-hidden">
+        <section className="text-white bg-black py-16 relative overflow-hidden">
             <div className="max-w-6xl mx-auto text-center mb-12">
                 <h2 className="text-[#7BDB16] font-bold text-2xl mb-2">Our Work</h2>
                 <p className="text-4xl md:text-5xl font-bold">Some of our previous work</p>
@@ -44,8 +44,6 @@ export default function OurWork() {
                         );
                     })}
                 </div>
-                <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
-                <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
             </div>
         </section>
     );

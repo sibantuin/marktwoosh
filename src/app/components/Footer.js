@@ -14,8 +14,8 @@ export default function Footer() {
                             height={100}
                             className="w-25 h-25 mx-auto md:mx-0"
                         />
-                        <p className="text-gray-300 text-sm">
-                            Lorem ipsum dolor sit amet consectetur <br />adipiscing elit nulla adipiscing tincidunt<br /> interdum tellus du.
+                        <p className="text-white text-regular text-base leading-relaxed pr-12">
+                            To make high-quality digital marketing services affordable and accessible for everyone, enabling businesses of all sizes to market smarter and grow faster
                         </p>
                         <div className="flex justify-center md:justify-start gap-8 text-white text-xl py-4">
                             <a href="#" target="_blank" rel="noopener noreferrer">
