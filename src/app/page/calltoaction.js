@@ -10,7 +10,7 @@ export default function CalltoAction() {
                         alt="Call to Action"
                         width={1920}
                         height={1080}
-                        className="w-2/4 items-center justify-center h-auto object-cover hover:text-white transition-all hover:text-white hover:text-shadow-[0_0_24px_rgba(255,255,255,0.8)]"
+                        className="w-5/9 items-center justify-center h-auto object-cover hover:text-white transition-all hover:text-white hover:text-shadow-[0_0_24px_rgba(255,255,255,0.8)]"
                     />
                 </div>
             </div>

@@ -6,18 +6,18 @@ export default function WhyUs() {
         <div className="bg-black py-10">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
-                    <div className="relative z-10 flex flex-col items-start justify-center text-left  gap-8">
+                    <div className="relative z-10 flex flex-col items-start justify-center text-left gap-4">
                         <div className="">
                             <p className="text-[#7BDB16] font-bold tracking-wide">Why Us?</p>
                             <div>
-                                <h1 className="text-white text-5xl font-semibold leading-tight">
+                                <h1 className="text-white text-5xl font-semibold leading-tight pt-2">
                                     Why Hire Me For Your Next <span className="text-[#7BDB16]">Project?</span>
                                 </h1>
                             </div>
                         </div>
-                        <p className="text-[#FFF]/50 text-base leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit semper <br />
-                            dalar elementum tempus hac tellus libero accumsan.
+                        <p className="text-[#8CF719] text-base leading-relaxed pb-[50px]">
+                            Smart design. Strategic words. Real results. That’s how I help  <br />
+                            brands growth.
                         </p>
                         <Link href={`../pricing`}>
                             <HookButton text="get in touch" />
@@ -25,19 +25,19 @@ export default function WhyUs() {
                     </div>
                     <div className="relative z-10 flex flex-col items-center justify-center text-left">
                         <div className="space-y-6 text-center p-4">
-                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#8CF719] text-[#8CF719]">
                                 Affordable and Accessible <br />Professional Solutions
                             </p>
-                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#8CF719] text-[#8CF719]">
                                 Eliminates Technical Barriers
                             </p>
-                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#8CF719] text-[#8CF719]">
                                 Faster Time to Market
                             </p>
-                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#8CF719] text-[#8CF719]">
                                 Scalable and Results-Driven
                             </p>
-                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#7BDB16] text-[#7BDB16]">
+                            <p className="px-8 py-4 rounded-[21px] font-semibold outline outline-1 outline-[#8CF719] text-[#8CF719]">
                                 Fully Managed Solution
                             </p>
                         </div>

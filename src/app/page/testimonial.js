@@ -18,16 +18,16 @@ export default function Testimonials() {
                     {[...testimonials, ...testimonials].map((testimonial, index) => (
                         <div
                             key={index}
-                            className="h-[450px] w-[400px]  p-8 rounded-xl border border-[#7BDB16] hover:border-[#7BDB16]/50 transition-all duration-300 group relative pb-20 flex-shrink-0 "
+                            className="h-[550px] w-[400px]  p-8 rounded-xl border border-[#7BDB16] hover:border-[#7BDB16]/50 transition-all duration-300 group relative pb-20 flex-shrink-0 "
                         >
                             <Image
                                 src={testimonial.company}
                                 width={100}
                                 height={100}
                                 alt={testimonial.name + " logo"}
-                                className="w-32 h-auto mb-6 object-contain"
+                                className="w-32 h-32 mb-6 object-contain"
                             />
-                            <p className="text-2xl font-bold mb-2 group-hover:text-white transition-colors">
+                            <p className="text-2xl text-[#8CF719] font-bold mb-2 transition-colors">
                                 {testimonial.quote}
                             </p>
                             <p className="text-white mb-8 leading-relaxed">{testimonial.text}</p>

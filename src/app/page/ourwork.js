@@ -20,7 +20,7 @@ export default function OurWork() {
                             <Link
                                 key={index}
                                 href={`/portfolio/${project.slug}`}
-                                className="h-[450px] w-[400px] border border-[#7BDB16] rounded-2xl p-4 flex-shrink-0 flex flex-col justify-between bg-black hover:shadow-[0_0_24px_rgba(123,219,22,0.2)] transition-all duration-200 cursor-pointer group"
+                                className="h-[550px] w-[400px] border border-[#7BDB16] rounded-2xl p-4 flex-shrink-0 flex flex-col justify-between bg-black hover:shadow-[0_0_24px_rgba(123,219,22,0.2)] transition-all duration-200 cursor-pointer group"
                             >
                                 <div>
                                     <div className="bg-black w-full rounded-lg h-48 flex items-center justify-center my-4 overflow-hidden">
@@ -35,9 +35,9 @@ export default function OurWork() {
                                     <h3 className="text-white text-md font-medium leading-snug px-10 py-5 group-hover:text-[#7BDB16] transition-colors duration-200">
                                         {project.title}
                                     </h3>
-                                </div>
-                                <div className="text-[#7BDB16]/80 group-hover:text-[#7BDB16] flex items-center gap-1 px-10 py-5 transition">
-                                    Read more <span className="mt-[2px] ml-[4px]">&gt;</span>
+                                    <div className="text-[#7BDB16]/80 font-semibold group-hover:text-[#7BDB16] flex items-center gap-1 px-10 transition">
+                                        Read more <span className="mt-[2px] ml-[4px]">&gt;</span>
+                                    </div>
                                 </div>
                             </Link>
                         );

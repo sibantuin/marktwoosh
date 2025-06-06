@@ -16,11 +16,11 @@ export default function LandingPage() {
                     />
                 </div>
                 <div className="relative z-10 flex h-screen flex-col items-center justify-center text-center">
-                    <h1 className="text-gradient mb-8 text-4xl font-semibold md:text-6xl lg:text-7xl">
+                    <h1 className="text-gradient mb-4 text-4xl font-semibold md:text-6xl lg:text-7xl">
                         Ready, Set, Woosh!
                     </h1>
-                    <p className="mb-12 max-w-2xl text-sm text-[#7C7C7C] md:text-2xl">
-                        Where fast meets smart: AI-powered growth <br /> services
+                    <p className="mb-10 max-w-2xl text-sm text-[#8CF719] md:text-2xl">
+                        Where fast meets smart: <br />  AI-powered growth services
                     </p>
                     <Link href={`../pricing`}>
                         <HookButton text={"Get Started"} />
