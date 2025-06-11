@@ -128,122 +128,76 @@ const teamMembers = [
     }
 ];
 
-const pricingPlans = {
-    monthly: [
-        {
-            title: "Monthly Plans",
-            price: "$129",
-            features: [
-                "Logo and basic brand kit (colors, fonts)",
-                "1-page website (mobile-ready)",
-                "4 social media posts per month",
-                "Dedicated account manager (email only)",
-            ],
-            badge: "",
+const pricingPlans = (isYearly) => [
+    {
+        title: "Starter",
+        price: isYearly ? "169" : "199",
+        note: "(Cancel Anytime)",
+        save: isYearly ? "Save 15%" : "",
+        description: "Perfect for new brands starting from scratch.",
+        features: [
+            "Logo and basic brand kit (colors, fonts)",
+            "1-page website (mobile-ready)",
+            "4 social media posts per month",
+            "Dedicated account manager (email only)"
+        ],
+        buttonStyle: "bg-black text-white border border-white hover:bg-gray-200 hover:text-black"
+    },
+    {
+        title: "Boost",
+        badge: {
+            text: "MOST POPULAR",
+            color: "bg-[#FF3C00] text-black"
         },
-        {
-            title: "Boost",
-            price: "$249",
-            features: [
-                "Full brand kit (logo, colors, visual guide)",
-                "Up to 3-page website",
-                "8 social media posts per month",
-                "AI Discovery SEO included",
-                "1 ad campaign* (Meta or Google)",
-                "Dedicated account manager (email + chat response within 48h)",
-            ],
-            badge: "MOST POPULAR",
+        price: isYearly ? "249" : "299",
+        save: isYearly ? "Save 17%" : "",
+        description: "For growing businesses that need a solid online presence.",
+        features: [
+            "Full brand kit (logo, colors, visual guide)",
+            "Up to 3-page website",
+            "8 social media posts per month",
+            "AI Discovery SEO included",
+            "1 ad campaign* (Meta or Google)",
+            "Dedicated account manager (email + chat response within 48h)"
+        ],
+        buttonStyle: "bg-[#FF3C00] text-white hover:bg-[#e63b00]"
+    },
+    {
+        title: "Scale",
+        badge: {
+            text: "BEST PERFORMANCE",
+            color: "bg-[#7BDB16] text-black"
         },
-        {
-            title: "Scale",
-            price: "$499",
-            features: [
-                "Everything in Boost",
-                "Up to 5-page website or mini landing page variant",
-                "12 social media posts per month",
-                "2 ad campaigns* (Meta + Google)",
-                "Monthly performance report",
-                "Dedicated account manager (chat response within 24h)",
-            ],
-            badge: "BEST PERFORMANCE",
-        },
-        {
-            title: "Dominate",
-            price: "$799",
-            features: [
-                "Full brand kit (logo, colors, visual guide)",
-                "Up to 3-page website",
-                "8 social media posts per month",
-                "AI Discovery SEO included",
-                "1 ad campaign* (Meta or Google)",
-                "Dedicated account manager (email + chat response within 48h)",
-            ],
-            badge: "",
-        },
-    ],
-    yearly: [
-        {
-            title: "Yearly Plans",
-            price: "$799",
-            features: [
-                "Full brand kit (logo, colors, visual guide)",
-                "Up to 3-page website",
-                "8 social media posts per month",
-                "AI Discovery SEO included",
-                "1 ad campaign* (Meta or Google)",
-                "Dedicated account manager (email + chat response within 48h)",
-                "Add-ons available",
-            ],
-            cta: "Get started"
-        },
-        {
-            title: "Boost",
-            price: "$249",
-            features: [
-                "Full brand kit (logo, colors, visual guide)",
-                "Up to 3-page website",
-                "8 social media posts per month",
-                "AI Discovery SEO included",
-                "1 ad campaign* (Meta or Google)",
-                "Dedicated account manager (email + chat response within 48h)",
-                "Add-ons available",
-            ],
-            highlight: "Most Popular",
-            cta: "Get started",
-            ctaColor: "bg-orange-500"
-        },
-        {
-            title: "Scale",
-            price: "$499",
-            features: [
-                "Everything in Boost",
-                "Up to 5-page website or mini landing page variant",
-                "12 social media posts per month",
-                "2 ad campaigns* (Meta + Google)",
-                "Monthly performance report",
-                "Dedicated account manager (chat response within 24h)",
-                "Add-ons available",
-            ],
-            highlight: "Best Performance",
-            cta: "Get started",
-            ctaColor: "bg-green-500"
-        },
-        {
-            title: "Dominate",
-            price: "$799",
-            features: [
-                "Full brand kit (logo, colors, visual guide)",
-                "Up to 3-page website",
-                "8 social media posts per month",
-                "AI Discovery SEO included",
-                "1 ad campaign* (Meta or Google)",
-                "Dedicated account manager (email + chat response within 48h)",
-                "Add-ons available",
-            ],
-            cta: "Get started"
-        },
-    ]
-}
+        price: isYearly ? "399" : "499",
+        save: isYearly ? "Save 20%" : "",
+        description: "For brands that want regular content and more traffic.",
+        features: [
+            "Everything in Boost",
+            "Up to 5-page website or mini landing page variant",
+            "12 social media posts per month",
+            "2 ad campaigns* (Meta + Google)",
+            "Monthly performance report",
+            "Dedicated account manager (chat response within 24h)"
+        ],
+        buttonStyle: "bg-[#7BDB16] text-black hover:bg-lime-400"
+    },
+    {
+        title: "Dominate",
+        price: isYearly ? "599" : "799",
+        save: isYearly ? "Save 25%" : "",
+        description: "For growing businesses that need a solid online presence.",
+        features: [
+            "Full brand kit (logo, colors, visual guide)",
+            "Up to 3-page website",
+            "8 social media posts per month",
+            "AI Discovery SEO included",
+            "1 ad campaign* (Meta or Google)",
+            "Dedicated account manager (email + chat response within 48h)"
+        ],
+        buttonStyle: "bg-black text-white border border-white hover:bg-gray-200 hover:text-black"
+    }
+];
+
 
 const testimonials = [
     {
@@ -335,9 +289,9 @@ const portfolioDetails = [
             {
                 heading: "",
                 bullets: [
-                    "Service Articulation: Clearly communicating the benefits and features of their global payment solutions to a diverse audience.​",
-                    "User Experience (UX): Designing an intuitive interface that facilitates easy navigation and encourages user engagement.​",
-                    "Brand Positioning: Establishing Kindlyn as a trusted and innovative leader in the financial technology sector."
+                    "<strong>Service Articulation</strong>: Clearly communicating the benefits and features of their global payment solutions to a diverse audience.​",
+                    "<strong>User Experience (UX)</strong>: Designing an intuitive interface that facilitates easy navigation and encourages user engagement.​",
+                    "<strong>Brand Positioning</strong>: Establishing Kindlyn as a trusted and innovative leader in the financial technology sector."
                 ],
                 image: "/portfolio/kindlyn3.svg"
             },
@@ -379,11 +333,19 @@ const portfolioDetails = [
                         title: "Increased Client Inquiries",
                         content: [
                             "By providing clear information and a user-friendly experience, the website has contributed to a notable increase in client inquiries and partnerships.​",
-                            "This case study demonstrates how a strategically designed website can enhance a company's online presence, effectively communicate service offerings, and drive business growth in a competitive market."
                         ]
                     }
                 ]
             },
+            {
+                subsections: [
+                    {
+                        content: [
+                            "This case study demonstrates how a strategically designed website can enhance a company's online presence, effectively communicate service offerings, and drive business growth in a competitive market."
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
@@ -409,9 +371,9 @@ const portfolioDetails = [
             {
                 heading: "",
                 bullets: [
-                    "Product Presentation: Effectively communicating the unique features and benefits of the Lumi Air 2.0 to a European audience unfamiliar with the brand.​",
-                    "User Experience (UX): Designing an intuitive and visually appealing interface that facilitates easy navigation and product discovery.​",
-                    "Brand Positioning: Establishing JMW Professional as a premium and innovative brand in the competitive European hair care market."
+                    "<strong>Product Presentation</strong>: Effectively communicating the unique features and benefits of the Lumi Air 2.0 to a European audience unfamiliar with the brand.​",
+                    "<strong>User Experience (UX)</strong>: Designing an intuitive and visually appealing interface that facilitates easy navigation and product discovery.​",
+                    "<strong>Brand Positioning</strong>: Establishing JMW Professional as a premium and innovative brand in the competitive European hair care market."
                 ],
                 image: "/portfolio/jmw3.svg"
             },
@@ -453,11 +415,19 @@ const portfolioDetails = [
                         title: "Increased Client Inquiries",
                         content: [
                             "By providing a seamless online shopping experience and effectively communicating product benefits, the website has contributed to a notable increase in online sales and customer inquiries.​",
-                            "The user-friendly interface and streamlined checkout process further boosted customer satisfaction and trust in the brand."
                         ]
                     }
                 ]
             },
+            {
+                subsections: [
+                    {
+                        content: [
+                            "The user-friendly interface and streamlined checkout process further boosted customer satisfaction and trust in the brand."
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
@@ -486,9 +456,9 @@ const portfolioDetails = [
             {
                 heading: "",
                 bullets: [
-                    "Diverse Service Portfolio: Presenting a wide array of services in a clear and organized manner to cater to various industries.​",
-                    "User Experience (UX): Designing an intuitive and user-friendly interface that allows potential clients to easily navigate and understand Semioticom's offerings.​",
-                    "Brand Consistency: Ensuring that the website reflects Semioticom's values of trust, honesty, and accountability."
+                    "<strong>Diverse Service Portfolio</strong>: Presenting a wide array of services in a clear and organized manner to cater to various industries.​",
+                    "<strong>User Experience (UX)</strong>: Designing an intuitive and user-friendly interface that allows potential clients to easily navigate and understand Semioticom's offerings.​",
+                    "<strong>Brand Consistency</strong>: Ensuring that the website reflects Semioticom's values of trust, honesty, and accountability."
                 ],
                 image: "/portfolio/semioticom3.svg"
             },
@@ -530,6 +500,14 @@ const portfolioDetails = [
                         title: "Increased Client Inquiries",
                         content: [
                             "By aligning the website's design and content with Semioticom's core values, the company has reinforced its reputation as a trustworthy and competent language service provider.",
+                        ]
+                    }
+                ],
+            },
+            {
+                subsections: [
+                    {
+                        content: [
                             "This case study exemplifies how a strategically designed website can enhance a company's online presence, effectively showcase its services, and strengthen its brand image in a competitive market."
                         ]
                     }
@@ -576,7 +554,7 @@ const portfolioDetails = [
                 subsections: [
                     {
                         title: "Implementation:",
-                        content: `Google Ads Optimization:`
+                        content: `<strong>Google Ads Optimization:</strong>`
                     }
                 ],
             },
@@ -590,7 +568,7 @@ const portfolioDetails = [
             {
                 subsections: [
                     {
-                        content: `Meta Ads Campaigns:`
+                        content: `<strong>Meta Ads Campaigns:</strong>`
                     }
                 ],
             },
@@ -704,7 +682,7 @@ const portfolioDetails = [
                 subsections: [
                     {
                         title: "Website Design and Development",
-                        content: `We started by redesigning Nano-Tag’s website with a focus on user experience (UX) and conversion rate optimization (CRO). The new design featured clear call-to-actions, faster loading times, and an intuitive layout, all aimed at reducing bounce rates and improving engagement, while making the site information easier to digest for the target audience.​`
+                        content: `We started by redesigning Nano-Tag's website with a focus on user experience (UX) and conversion rate optimization (CRO). The new design featured clear call-to-actions, faster loading times, and an intuitive layout, all aimed at reducing bounce rates and improving engagement, while making the site information easier to digest for the target audience.​`
                     },
 
                 ],
@@ -735,7 +713,7 @@ const portfolioDetails = [
                 subsections: [
                     {
                         title: "Overall Impact:",
-                        content: `Our combined efforts in web design and Google Ads significantly enhanced Nano-Tag’s online presence and sales performance. The data shows a clear trend of improving user engagement and conversion efficiency, demonstrating the success of the project in achieving Nano-Tag’s business objectives.​`
+                        content: `Our combined efforts in web design and Google Ads significantly enhanced Nano-Tag's online presence and sales performance. The data shows a clear trend of improving user engagement and conversion efficiency, demonstrating the success of the project in achieving Nano-Tag's business objectives.​`
                     },
                 ],
                 image: "/portfolio/nanotag3.svg"
@@ -762,6 +740,14 @@ const portfolioDetails = [
             {
                 heading: "Project Overview",
                 content: `Mondona’s journey with natural and healthy foods starts in Italy by Maximilian and Alexander Feulner where the company starts selling all-natural, organic, and truly healthy products that are uniquely dried so to become the perfect, easy-to-eat addition to every balanced nutrition plan.`,
+            },
+            {
+                subsections: [
+                    {
+                        title: "Challenges",
+                        content: `Nano-Tag faced challenges in converting site visitors into customers and achieving a strong return on ad spend (ROAS) through its Google Ads efforts. The challenges existed due to the existing website was old-fashioned and not optimized for conversions despite following the industry standard, and the ad campaigns needed refinement to better align with customer intent.`
+                    }
+                ],
                 image: "/portfolio/mondona2.svg"
             },
             {
@@ -787,7 +773,7 @@ const portfolioDetails = [
                 subsections: [
                     {
                         title: "Google approved:",
-                        content: `​The day of the launch our website scored exceptionally high on Google ranking and website tests, with performance speed of 89, accessibility rating of 92, best practices of 88 and SEO at 92​`
+                        content: `​The day of the launch our website scored exceptionally high on Google ranking and website tests, with performance speed of 89, accessibility rating of 92, best practices of 88 and SEO at 92.​`
                     },
                 ],
                 image: "/portfolio/mondona4.svg",
@@ -797,7 +783,7 @@ const portfolioDetails = [
                 subsections: [
                     {
                         title: "Brand & UI recognition:",
-                        content: `As the new UI started getting tested we received excellent feedback from small focus groups on usability and accessibility scores of over 93% by the interviewees.​`
+                        content: `As the new UI started getting tested we received excellent feedback from small focus groups on usability and accessibility scores of over 93% by the interviews.​`
                     },
                     {
                         title: "Overall Impact:",

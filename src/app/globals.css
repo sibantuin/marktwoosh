@@ -62,3 +62,39 @@ body {
 .animate-scroll-right {
   animation: scroll-right 45s linear infinite;
 }
+
+.stroke-gradient-border::before,
+.stroke-gradient-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem; /* same as rounded-2xl */
+  pointer-events: none;
+  z-index: -1;
+}
+
+.stroke-gradient-border::before {
+  border: 1px solid transparent;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0)
+    )
+    border-box;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+.stroke-gradient-border::after {
+  border: 1px solid transparent;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0)
+    )
+    border-box;
+  opacity: 0.6;
+  z-index: -2;
+}
