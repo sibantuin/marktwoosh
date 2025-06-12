@@ -3,10 +3,10 @@ export default function Number() {
         <section>
             <div className="bg-black relative overflow-hidden">
                 <div className="relative z-10 flex flex-col items-center justify-center text-center">
-                    <h1 className="mb-[48px] font-bold text-5xl">
+                    <h1 className="mb-[50px] font-bold text-5xl">
                         MarktWoosh in Numbers
                     </h1>
-                    <div className="grid grid-cols-4 gap-[72px] mx-auto">
+                    <div className="grid grid-cols-4 gap-[40px] mx-auto">
                         <div className="">
                             <h3 className="text-[42px] font-bold text-[#8CF719] mb-2">99%</h3>
                             <p className="font-bold text-[24px] font-bold text-white">Customer satisfaction <br /> Based on real reviews</p>

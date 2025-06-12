@@ -14,16 +14,16 @@ const portfolioItems = portfolioDetails.map(({ slug, title }) => ({
 
 export default function Portfolio() {
     return (
-        <div className="bg-black min-h-screen mt-20">
+        <div className="bg-black min-h-screen">
             <Navbar />
-            <div className="max-w-6xl mx-auto px-4 py-16">
-                <div className="text-center mb-12">
-                    <h2 className="text-[#7BDB16] font-bold text-xl mb-4">Our clients</h2>
+            <div className="max-w-6xl mx-auto pt-[130px] pb-[100px]">
+                <div className="text-center mb-[100px]">
+                    <h2 className="text-[#7BDB16] font-bold text-xl mb-[10px]">Our clients</h2>
                     <p className="text-4xl md:text-5xl font-semibold text-white">
                         From startups to scaleups <br /> and beyond
                     </p>
                 </div>
-                <div className="flex flex-col gap-10 py-10">
+                <div className="flex flex-col gap-10">
                     {portfolioItems.map((item, index) => (
                         <Link
                             key={index}

@@ -22,38 +22,38 @@ export default function PortfolioDetail({ params }) {
     if (!data) return <div className="text-white p-10">Project not found</div>;
 
     return (
-        <div className="bg-black text-white min-h-screen mt-20">
+        <div className="bg-black text-white min-h-screen">
             <Navbar />
-            <div className="max-w-6xl mx-auto py-12">
-                <h1 className="text-center text-[55px] font-bold mb-6"
+            <div className="max-w-6xl mx-auto pt-[130px]">
+                <h1 className="text-center text-[55px] font-bold"
                     dangerouslySetInnerHTML={{ __html: data.title }}
                 />
                 {data.logo && (
-                    <div className="flex justify-center mb-8">
+                    <div className="flex justify-center">
                         <Image
                             src={data.logo}
                             alt={`${data.client} logo`}
                             width={900}
                             height={250}
+                            className='rounded-xl w-400'
                         />
                     </div>
                 )}
-                <p className="text-justify text-[35px] mx-auto font-semibold text-white mb-12">{data.description}</p>
+                <p className="text-justify text-[35px] mx-auto font-semibold text-white pb-[50px]">{data.description}</p>
                 {data.sections.map((section, index) => (
                     <div key={index} className="mb-12">
-                        <h2 className="text-[#83E617] text-[80px] font-bold mb-4">{section.heading}</h2>
-
+                        <h2 className="text-[#83E617] text-[80px] font-bold">{section.heading}</h2>
                         {section.content && (
                             Array.isArray(section.content)
                                 ? section.content.map((p, idx) => (
                                     <p key={idx} className="text-white text-[35px] text-justify font-regular mb-8">{p}</p>
                                 ))
                                 : section.content.split('\n\n').map((paragraph, idx) => (
-                                    <p key={idx} className="text-white text-[35px] text-justify font-regular mb-4">{paragraph}</p>
+                                    <p key={idx} className="text-white text-[35px] text-justify font-regular">{paragraph}</p>
                                 ))
                         )}
                         {section.bullets && (
-                            <ul className="list-disc list-inside text-[35px] text-white text-justify mb-24">
+                            <ul className="list-disc list-inside text-[35px] text-white text-justify">
                                 {section.bullets.map((bullet, i) => (
                                     <li className="mb-4" key={i} dangerouslySetInnerHTML={{ __html: bullet }} />
                                 ))}
@@ -78,8 +78,6 @@ export default function PortfolioDetail({ params }) {
                                 ))}
                             </div>
                         )}
-
-
                         {section.image && (
                             <div className="flex justify-center">
                                 <Image
@@ -87,7 +85,7 @@ export default function PortfolioDetail({ params }) {
                                     alt={`${data.client || "Client"} case image`}
                                     width={900}
                                     height={250}
-                                    className="rounded-xl w-400 my-12"
+                                    className="rounded-xl w-400 py-[100px]"
                                 />
                             </div>
                         )}
@@ -95,7 +93,7 @@ export default function PortfolioDetail({ params }) {
                 ))}
             </div>
             <OurWork />
-            <div className='flex justify-center gap-4 mb-12'>
+            <div className='flex justify-center gap-4 pb-[100px]'>
                 <Link href={`../pricing`}>
                     <button className="bg-[#83E617] text-black font-semibold px-12 py-3 rounded-full">
                         Get in Touch

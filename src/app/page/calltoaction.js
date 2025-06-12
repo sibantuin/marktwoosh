@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function CalltoAction() {
     return (
         <section>
-            <div className="bg-black relative overflow-hidden py-10">
-                <div className="relative z-10 p-16 flex flex-col items-center justify-center text-center">
+            <div className="bg-black relative overflow-hidden pt-[100px]">
+                <div className="relative z-10 px-16 flex flex-col items-center justify-center text-center">
                     <Image
                         src="/decoration/dec_cta.svg"
                         alt="Call to Action"

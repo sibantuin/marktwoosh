@@ -1,20 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HookButton from "../components/HookButton";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 export default function Contact() {
+    const searchParams = useSearchParams();
+    const selectedPlan = searchParams.get("plan");
+
     const [activeTag, setActiveTag] = useState("Monthly");
-    const tags = ["Monthly", "Boost", "Scale", "Dominate"];
+    const tags = ["Starter", "Boost", "Scale", "Dominate"];
+
+    useEffect(() => {
+        if (selectedPlan && tags.includes(selectedPlan)) {
+            setActiveTag(selectedPlan);
+        }
+    }, [selectedPlan]);
 
     return (
         <>
-            <div className="bg-black min-h-screen mt-20">
+            <div className="bg-black min-h-screen">
                 <Navbar />
                 <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-10 lg:px-8">
-                    <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+                    <div className="lg:grid lg:grid-cols-2 lg:gap-16 mt-22">
                         <div className=" flex flex-col items-left">
                             <span className="font-semibold text-base text-[#7BDB16]">
                                 Let’s Discuss Your Needs
@@ -23,7 +33,7 @@ export default function Contact() {
                                 Contact us
                             </h1>
                             <p className="text-white mb-12">
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit <br /> nulla adipiscing tincidunt interdum tellus du.
+                                Every second your website underperforms, you're losing <br /> revenue. Let's fix that today!
                             </p>
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
@@ -63,7 +73,7 @@ export default function Contact() {
                                         <label className="block text-sm font-medium text-white">Name</label>
                                         <input
                                             type="text"
-                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-[#9795B5] font-regular bg-white shadow-sm p-3"
+                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-black font-regular bg-white shadow-sm p-3"
                                             placeholder="John"
                                         />
                                     </div>
@@ -71,7 +81,7 @@ export default function Contact() {
                                         <label className="block text-sm font-medium text-white">Email</label>
                                         <input
                                             type="email"
-                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-[#ADABC3] font-regular bg-white shadow-sm p-3"
+                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-black font-regular bg-white shadow-sm p-3"
                                             placeholder="example@mail.com"
                                         />
                                     </div>
@@ -81,14 +91,14 @@ export default function Contact() {
                                         <label className="block text-sm font-medium text-white">Phone</label>
                                         <input
                                             type="tel"
-                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-[#9795B5] font-regular bg-white shadow-sm p-3"
+                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 text-black font-regular bg-white shadow-sm p-3"
                                             placeholder="(123) 456-789" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-white">Company</label>
                                         <input
                                             type="text"
-                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 bg-white text-[#ADABC3] font-regular shadow-sm p-3"
+                                            className="mt-1 pl-6 block w-full rounded-full border-gray-300 bg-white text-black font-regular shadow-sm p-3"
                                             placeholder="MarktWoosh" />
                                     </div>
                                 </div>
@@ -96,7 +106,7 @@ export default function Contact() {
                                     <label className="block text-sm font-medium text-white">Message</label>
                                     <textarea
                                         rows={4}
-                                        className="mt-1 pl-6 block w-full rounded-[21px] border-gray-300 bg-white text-[#9795B5] font-regular shadow-sm p-3"
+                                        className="mt-1 pl-6 block w-full rounded-[21px] border-gray-300 bg-white text-black font-regular shadow-sm p-3"
                                         placeholder="Please type your message here..."
                                     />
                                 </div>
@@ -117,7 +127,7 @@ export default function Contact() {
                                 </div>
                             </form>
                             <div className="pb-12">
-                                <HookButton text={"send message"} />
+                                <HookButton text={"Send message"} />
                             </div>
                         </div>
                     </div>

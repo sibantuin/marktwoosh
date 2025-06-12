@@ -5,7 +5,7 @@ import { testimonials } from "@/app/data/constant";
 
 export default function Testimonials() {
     return (
-        <section className="bg-black text-white py-20 overflow-hidden">
+        <section className="bg-black text-white pb-[100px] overflow-hidden">
             <div className="max-w-6xl mx-auto text-center mb-12">
                 <h2 className="text-[65px] font-bold">Testimonials</h2>
                 <p className="text-[#7BDB16] text-[18px] mb-12">

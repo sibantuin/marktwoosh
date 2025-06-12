@@ -6,7 +6,7 @@ import { portfolioDetails } from "../data/constant";
 
 export default function OurWork() {
     return (
-        <section className="text-white bg-black py-16 relative overflow-hidden">
+        <section className="text-white bg-black py-[100px] relative overflow-hidden">
             <div className="max-w-6xl mx-auto text-center mb-12">
                 <h2 className="text-[#7BDB16] font-bold text-[20px]">Our Work</h2>
                 <p className="text-[55px] font-bold">Some of our previous work</p>

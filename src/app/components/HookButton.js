@@ -7,7 +7,7 @@ function HookButton({ text }) {
             whileHover={{ scale: 1.05 }}
             transition={{ type: 'spring', stiffness: 400, damping: 15 }}
         >
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#7BDB16] to-[#7BDB16]/0 backdrop-blur-lg" />
+            <div className="absolute inset-0 rounded-full bg-[#8CF719]" />
 
             <motion.div
                 className="absolute inset-0 rounded-full"
@@ -21,9 +21,9 @@ function HookButton({ text }) {
 
             {/* Animated Text */}
             <motion.span
-                className="relative z-10 text-white"
+                className="relative z-10 text-black"
                 whileHover={{
-                    color: '#ffffff',
+                    color: '#000',
                     x: 5,
                     transition: { duration: 0.3 }
                 }}

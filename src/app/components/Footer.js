@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white pt-16 px-4">
-            <div className="max-w-6xl mx-auto border-t border-l border-r border-gray-700 rounded-t-3xl p-4 md:p-10">
+        <footer className="bg-black text-white">
+            <div className="max-w-6xl mx-auto border-t border-l border-r border-[#575757] rounded-t-[40px] pt-20 pl-20 pr-20 pb-5">
 
                 <div className="grid md:grid-cols-3 gap-10 items-start">
                     <div className="space-y-6 text-center md:text-left">
@@ -14,7 +14,7 @@ export default function Footer() {
                             height={100}
                             className="w-25 h-25 mx-auto md:mx-0"
                         />
-                        <p className="text-white text-regular text-base leading-relaxed pr-12">
+                        <p className="text-white text-regular text-base leading-relaxed pr-4 text-justify">
                             To make high-quality digital marketing services affordable and accessible for everyone, enabling businesses of all sizes to market smarter and grow faster
                         </p>
                         <div className="flex justify-center md:justify-start gap-8 text-white text-xl py-4">

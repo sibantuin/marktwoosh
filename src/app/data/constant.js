@@ -96,17 +96,17 @@ const aboutUsSteps = [
     {
         title: "Step 1",
         content:
-            "We handle everything from branding and websites to content and paid ads — backed by AI, executed by real people, and managed like we’re part of your team. No corporate fluff. No ghosting. Just high-quality support that scales with you. We built the service we wished existed when we were in your shoes. Now, it’s yours. Let’s Woosh!",
+            "We handle everything from branding and websites to content and paid ads — backed by AI, executed by real people, and managed like we’re part of your team. <br /> No corporate fluff. No ghosting. Just high-quality support that scales with you. <br /> <strong>We built the service we wished existed when we were in your shoes. Now, it’s yours. Let’s Woosh!</strong>",
     },
     {
         title: "Step 2",
         content:
-            "After working in digital marketing since 2016, I experienced the same pain points again and again — watching small and medium-sized businesses with real potential struggle to access the kind of marketing support they deserved. And it wasn’t just me. A group of us — designers, performance marketers, content strategists — all from different corners of the marketing world",
+            "After working in digital marketing since 2016, I experienced the same pain points again and again — watching small and medium-sized businesses with real potential struggle to access the kind of marketing support they deserved. <br />And it wasn’t just me. <br /> A group of us — designers, performance marketers, content strategists — all from different corners of the marketing world",
     },
     {
         title: "Step 3",
         content:
-            "— kept running into the same frustration: Great brands were being held back by bloated agencies, inconsistent freelancers, or DIY tools that created more confusion than growth. So, we came together to build MarktWoosh — a done-for-you marketing service that’s fast, affordable, and built to deliver real results.",
+            "— kept running into the same frustration: <br /><strong>Great brands were being held back by bloated agencies, inconsistent freelancers, or DIY tools that created more confusion than growth.</strong> <br />So, we came together to build MarktWoosh — a done-for-you marketing service that’s fast, affordable, and built to deliver real results.",
     },
 ];
 
@@ -282,12 +282,10 @@ const portfolioDetails = [
                 subsections: [
                     {
                         title: "Challenges",
-                        content: ``
                     }
                 ]
             },
             {
-                heading: "",
                 bullets: [
                     "<strong>Service Articulation</strong>: Clearly communicating the benefits and features of their global payment solutions to a diverse audience.​",
                     "<strong>User Experience (UX)</strong>: Designing an intuitive interface that facilitates easy navigation and encourages user engagement.​",
