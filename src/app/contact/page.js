@@ -27,7 +27,7 @@ export default function Contact() {
                     <div className="lg:grid lg:grid-cols-2 lg:gap-16 mt-22">
                         <div className=" flex flex-col items-left">
                             <span className="font-semibold text-base text-[#7BDB16]">
-                                Let’s Discuss Your Needs
+                                Let's Discuss Your Needs
                             </span>
                             <h1 className="mb-4 text-xl font-semibold md:text-2xl lg:text-4xl text-white">
                                 Contact us

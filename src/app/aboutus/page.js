@@ -18,7 +18,7 @@ export default function AboutUs() {
                         About us
                     </h1>
                     <h1 className="text-4xl font-semibold text-[#8CF719]">
-                        Built By Marketers Who’ve Seen It All
+                        Built By Marketers Who've Seen It All
                         <br />— And Had Enough.
                     </h1>
                 </div>
@@ -49,10 +49,10 @@ export default function AboutUs() {
                                             className="absolute inset-0 transition-all duration-500"
                                             style={{
                                                 background: index < currentStep
-                                                    ? "linear-gradient(to right, #8CF719, #8CF719)" // full green
+                                                    ? "linear-gradient(to right, #8CF719, #8CF719)"
                                                     : index === currentStep
-                                                        ? "linear-gradient(to right, #8CF719, #b2f58a, #e3fad0, #ffffff)" // smooth green-to-white
-                                                        : "linear-gradient(to right, #ffffff, #ffffff)" // full white
+                                                        ? "linear-gradient(to right, #8CF719, #b2f58a, #e3fad0, #ffffff)"
+                                                        : "linear-gradient(to right, #ffffff, #ffffff)"
                                             }}
                                         />
                                     </div>
