@@ -27,13 +27,13 @@ export default function Contact() {
                     <div className="lg:grid lg:grid-cols-2 lg:gap-16 mt-22">
                         <div className=" flex flex-col items-left">
                             <span className="font-semibold text-base text-[#7BDB16]">
-                                Let's Discuss Your Needs
+                                Let&apos;s Discuss Your Needs
                             </span>
                             <h1 className="mb-4 text-xl font-semibold md:text-2xl lg:text-4xl text-white">
                                 Contact us
                             </h1>
                             <p className="text-white mb-12">
-                                Every second your website underperforms, you're losing <br /> revenue. Let's fix that today!
+                                Every second your website underperforms, you&apos;re losing <br /> revenue. Let&apos;s fix that today!
                             </p>
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image
