@@ -10,7 +10,7 @@ export default function Contact() {
     const searchParams = useSearchParams();
     const selectedPlan = searchParams.get("plan");
 
-    const [activeTag, setActiveTag] = useState("Monthly");
+    const [activeTag, setActiveTag] = useState("Starter");
     const tags = ["Starter", "Boost", "Scale", "Dominate"];
 
     useEffect(() => {

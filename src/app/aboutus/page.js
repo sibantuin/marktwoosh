@@ -18,7 +18,7 @@ export default function AboutUs() {
                         About us
                     </h1>
                     <h1 className="text-4xl font-semibold text-[#8CF719]">
-                        Built By Marketers Who've Seen It All
+                        Built By Marketers Who&rsquo;ve Seen It All
                         <br />— And Had Enough.
                     </h1>
                 </div>
@@ -80,7 +80,7 @@ export default function AboutUs() {
                         Meet our team members
                     </h2>
                     <p className="text-[#8CF719] font-light">
-                        We're not just a team—we're your growth partners. With a blend of <br />
+                        We&rsquo;re not just a team—we&rsquo;re your growth partners. With a blend of <br />
                         creativity, data-driven strategies, and tech expertise.
                     </p>
                     <div className="mt-[50px] flex justify-center items-start gap-x-48">
