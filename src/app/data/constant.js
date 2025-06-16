@@ -198,7 +198,6 @@ const pricingPlans = (isYearly) => [
     }
 ];
 
-
 const testimonials = [
     {
         company: "/brand/brand_mondona.svg",
