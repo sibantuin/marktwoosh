@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function CalltoAction() {
     return (
         <section>
-            <div className="bg-black relative overflow-hidden pt-[100px]">
+            <div className="bg-black relative overflow-hidden">
                 <div className="relative z-10 px-16 sm:px-16 md:px-26 lg:px-32 flex flex-col items-center justify-center text-center">
                     <Image
                         src="/decoration/dec_cta.svg"

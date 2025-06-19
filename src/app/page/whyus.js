@@ -5,7 +5,7 @@ import HookButton from "../components/HookButton";
 
 export default function WhyUs() {
     return (
-        <section className="bg-black py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 md:px-8">
+        <section className="bg-black py-[100px] sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 md:px-8">
             <div className="mx-auto max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
                     <div className="relative z-10 flex flex-col items-start justify-center text-left gap-4 px-16">

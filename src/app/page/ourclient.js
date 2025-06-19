@@ -26,7 +26,7 @@ export default function OurClient() {
                                         alt={`${client.img.split('_')[1].split('.')[0]} logo`}
                                         width={160}
                                         height={80}
-                                        className="object-contain h-10 sm:h-12 w-full max-w-[120px] sm:max-w-[140px] mx-auto transition-all duration-300 group-hover:grayscale"
+                                        className="object-contain h-10 sm:h-12 w-full max-w-[120px] sm:max-w-[140px] mx-auto"
                                     />
                                 </div>
                             ))}
