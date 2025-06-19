@@ -4,7 +4,6 @@ import { portfolioDetails } from '@/app/data/constant';
 import OurWork from '@/app/page/ourwork';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 export const dynamic = 'force-static';
 export async function generateStaticParams() {
@@ -99,7 +98,6 @@ export default function PortfolioDetail({ params }) {
                         </button>
                     </Link>
                 </div>
-
                 <div className="transition transform hover:scale-105 sm:hover:scale-110 duration-300">
                     <Link href="/pricing">
                         <button className="text-white rounded-full border-[#83E617] border px-4 py-2 sm:px-8 sm:py-3">
@@ -108,8 +106,6 @@ export default function PortfolioDetail({ params }) {
                     </Link>
                 </div>
             </div>
-
-
             <Footer />
         </div>
     );
